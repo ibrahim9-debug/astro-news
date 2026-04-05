@@ -1,11 +1,9 @@
 ---
-import Github from "@/assets/svgs/github.astro";
 import Search01 from "@/assets/svgs/search-01.astro";
 import MenuDropdown from "./menu-dropdown.astro";
 import { SITE } from "@/lib/config";
 import ThemeController from "../bases/theme-controller.astro";
 ---
-
 <div
   class="navbar border-b border-primary-content/80 dark:border-primary-content/20"
 >
@@ -20,14 +18,6 @@ import ThemeController from "../bases/theme-controller.astro";
     <ThemeController />
     <a class="btn btn-ghost btn-circle" href="/search" aria-label="Search">
       <Search01 />
-    </a>
-    <a
-      class="btn btn-ghost btn-circle"
-      href={SITE.github}
-      target="_blank"
-      aria-label="GitHub"
-    >
-      <Github />
     </a>
   </div>
 </div>
