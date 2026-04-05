@@ -73,3 +73,12 @@
     @apply hover:underline decoration-primary;
   }
 }
+
+@layer base {
+  a {
+    color: #ff6b35;
+  }
+  a:hover {
+    color: #e55a25;
+  }
+}
