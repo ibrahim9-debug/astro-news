@@ -1,18 +1,17 @@
 ---
 import { OTHER_LINKS } from "@/lib/config";
+import Icon from "../bases/icon.astro";
 ---
 <footer
   class="footer border-t border-primary-content/80 dark:border-primary-content/20 py-6"
 >
   <div class="container flex flex-col items-center gap-4 text-center">
-    <a
-      href="https://x.com/calmajadotcom"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="link link-hover font-bold"
-    >
-      Follow X Calmaja (Twitter)
-    </a>
+    <div class="flex items-center gap-2">
+      <span class="font-bold">Follow Calmaja:</span>
+      <a href="https://x.com/calmajadotcom" target="_blank" rel="noopener noreferrer" aria-label="Follow Calmaja di X">
+        <Icon icon="newTwitter" />
+      </a>
+    </div>
     <nav class="flex flex-wrap gap-4 text-xs justify-center">
       {
         OTHER_LINKS.map(({ href, text, target }) => (
