@@ -1,33 +1,18 @@
 ---
-import { SOCIAL_LINKS, OTHER_LINKS } from "@/lib/config";
-import Icon from "../bases/icon.astro";
+import { OTHER_LINKS } from "@/lib/config";
 ---
 <footer
   class="footer border-t border-primary-content/80 dark:border-primary-content/20 py-6"
 >
   <div class="container flex flex-col items-center gap-4 text-center">
-    <nav>
-      <div class="flex gap-4 justify-center">
-        <p class="font-bold">Social Media:</p>
-        <ul class="flex flex-wrap gap-4">
-          {
-            SOCIAL_LINKS.map(({ href, icon, text, target }) => (
-              <li>
-                
-                  href={href}
-                  class="link link-hover"
-                  target={target ?? "_blank"}
-                  title={text}
-                  aria-label={text}
-                >
-                  <Icon icon={icon} />
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-    </nav>
+    
+      href="https://x.com/calmajadotcom"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link link-hover font-bold"
+    >
+      Follow X Calmaja (Twitter)
+    </a>
     <nav class="flex flex-wrap gap-4 text-xs justify-center">
       {
         OTHER_LINKS.map(({ href, text, target }) => (
