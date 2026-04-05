@@ -3,6 +3,7 @@ import { render } from "astro:content";
 import BaseLayout from "@/layouts/base.astro";
 import ContentLayout from "@/layouts/content.astro";
 import ArticleHeader from "./_components/article-header.astro";
+import Trakteer from "./_components/trakteer.astro";
 import { articlesHandler } from "@/lib/handlers/articles";
 export const getStaticPaths = async () => {
   const articles = articlesHandler.allArticles();
@@ -22,15 +23,5 @@ const { Content, remarkPluginFrontmatter } = await render(article);
   <ContentLayout>
     <Content />
   </ContentLayout>
-  <div class="container py-8 flex flex-col items-center gap-3 border-t border-base-200 mt-4">
-    <p class="text-center opacity-70">Kalau tulisan ini membantu, traktir gw yuk!</p>
-    
-      href="https://trakteer.id/calmajadotcom"
-      target="_blank"
-      rel="noopener noreferrer"
-      style="display:inline-block; background:#ff6b35; color:white; padding:12px 32px; border-radius:8px; text-decoration:none; font-weight:bold;"
-    >
-      Traktir Gw
-    </a>
-  </div>
+  <Trakteer />
 </BaseLayout>
