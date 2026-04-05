@@ -5,19 +5,15 @@
   root: ":root";
   logs: false;
 }
-
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
 @theme {
   /* Font Family */
   --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: "Source Serif 4 Variable", ui-serif, Georgia, Cambria,
     "Times New Roman", Times, serif;
-
   --breakpoint-2xl: initial;
 }
-
 @layer base {
   :root {
     @apply cursor-default;
@@ -25,22 +21,18 @@
   html {
     @apply h-full text-[16px];
   }
-
   @media (min-width: 1024px) {
     html {
       @apply text-[17px];
     }
   }
-
   body {
     @apply font-sans antialiased h-full;
   }
-
   h1,
   h2 {
     @apply font-serif;
   }
-
   small,
   time {
     @apply text-sm;
@@ -56,7 +48,6 @@
     }
   }
 }
-
 @utility container {
   margin-inline: auto;
   padding-inline: 1rem;
@@ -67,18 +58,8 @@
     max-width: 1248px;
   }
 }
-
 @layer components {
   .a-01 {
     @apply hover:underline decoration-primary;
-  }
-}
-
-@layer base {
-  a {
-    color: #ff6b35;
-  }
-  a:hover {
-    color: #e55a25;
   }
 }
