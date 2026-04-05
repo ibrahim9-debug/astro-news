@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: ibrahim9-debug/astro-news
-  branch: main
+  branch: master
   base_url: https://sveltia-cms-auth.mulkiahdiat9.workers.dev
 
 media_folder: public/images/uploads
