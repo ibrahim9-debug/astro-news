@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@/layouts/base.astro";
 import { getEntry } from "astro:content";
+import Headlines from "@/pages/_home/headlines.astro";
 import LatestNews from "@/pages/_home/latestNews.astro";
 const entry = await getEntry("views", "home");
 if (!entry) {
@@ -8,5 +9,6 @@ if (!entry) {
 }
 ---
 <BaseLayout entry={entry}>
+  <Headlines />
   <LatestNews />
 </BaseLayout>
