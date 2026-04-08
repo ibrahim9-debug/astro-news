@@ -23,6 +23,10 @@ export const OTHER_LINKS: Link[] = [
     text: "Tentang",
   },
   {
+    href: "/categories",
+    text: "Sitemap",
+  },
+  {
     href: "/privacy",
     text: "Privacy Policy",
   },
