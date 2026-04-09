@@ -3,16 +3,16 @@ backend:
   repo: ibrahim9-debug/astro-news
   branch: master
   base_url: https://sveltia-cms-auth.mulkiahdiat9.workers.dev
-
 media_folder: public/images/uploads
 public_folder: /images/uploads
-
 collections:
   - name: "articles"
     label: "Artikel"
     folder: "src/content/articles"
     create: true
     slug: "{{slug}}"
+    extension: "mdx"
+    format: "frontmatter"
     fields:
       - { label: "Judul", name: "title", widget: "string" }
       - { label: "Kategori", name: "category", widget: "select", options: ["Cerita Pribadi", "Mindful"] }
