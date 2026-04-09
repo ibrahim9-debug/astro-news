@@ -4,6 +4,7 @@ import BaseLayout from "@/layouts/base.astro";
 import ContentLayout from "@/layouts/content.astro";
 import ArticleHeader from "./_components/article-header.astro";
 import Trakteer from "./_components/trakteer.astro";
+import Share from "@/components/elements/share.astro";
 import { articlesHandler } from "@/lib/handlers/articles";
 export const getStaticPaths = async () => {
   const articles = articlesHandler.allArticles();
@@ -23,5 +24,9 @@ const { Content, remarkPluginFrontmatter } = await render(article);
   <ContentLayout>
     <Content />
   </ContentLayout>
+  <div class="container max-w-5xl py-6 border-t border-base-300">
+    <p class="text-sm text-base-content/70 mb-3">Bagikan artikel ini</p>
+    <Share text={article.data.title} />
+  </div>
   <Trakteer />
 </BaseLayout>
