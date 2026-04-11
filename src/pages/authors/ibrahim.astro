@@ -6,8 +6,12 @@ const author = await getEntry("authors", "ibrahim");
 if (!author) {
   return Astro.redirect("/404");
 }
+const entry = await getEntry("views", "about");
+if (!entry) {
+  return Astro.redirect("/404");
+}
 ---
-<BaseLayout entry={author}>
+<BaseLayout entry={entry}>
   <ContentLayout>
     <div class="flex flex-col items-center text-center gap-6 py-12">
       <img
