@@ -60,8 +60,9 @@
   .prose {
     font-family: "Lora", ui-serif, Georgia, serif;
     p, li, blockquote {
-      font-family: "Lora", ui-serif, Georgia, serif;
-    }
+  font-family: "Lora", ui-serif, Georgia, serif;
+  font-weight: 600;
+}
     h1, h2, h3, h4 {
       font-family: "Playfair Display", ui-serif, Georgia, serif;
     }
