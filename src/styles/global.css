@@ -7,11 +7,12 @@
 }
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 @theme {
-  /* Font Family */
   --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: "Source Serif 4 Variable", ui-serif, Georgia, Cambria,
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria,
     "Times New Roman", Times, serif;
+  --font-body: "Lora", ui-serif, Georgia, serif;
+  --font-ui: "Roboto", ui-sans-serif, system-ui, sans-serif;
   --breakpoint-2xl: initial;
 }
 @layer base {
@@ -30,14 +31,22 @@
     @apply font-sans antialiased h-full;
   }
   h1,
-  h2 {
-    @apply font-serif;
+  h2,
+  h3 {
+    font-family: "Playfair Display", ui-serif, Georgia, serif;
   }
   small,
   time {
     @apply text-sm;
   }
   .prose {
+    font-family: "Lora", ui-serif, Georgia, serif;
+    p, li, blockquote {
+      font-family: "Lora", ui-serif, Georgia, serif;
+    }
+    h1, h2, h3, h4 {
+      font-family: "Playfair Display", ui-serif, Georgia, serif;
+    }
     pre {
       code {
         span,
@@ -61,5 +70,8 @@
 @layer components {
   .a-01 {
     @apply hover:underline decoration-primary;
+  }
+  .font-ui {
+    font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
   }
 }
