@@ -61,7 +61,13 @@
     font-family: "Lora", ui-serif, Georgia, serif;
     p, li, blockquote {
   font-family: "Lora", ui-serif, Georgia, serif;
-      color: #292929;
+  color: #292929;
+}
+
+[data-theme=dark] .prose p,
+[data-theme=dark] .prose li,
+[data-theme=dark] .prose blockquote {
+  color: #e8e8e8;
 }
     h1, h2, h3, h4 {
       font-family: "Playfair Display", ui-serif, Georgia, serif;
