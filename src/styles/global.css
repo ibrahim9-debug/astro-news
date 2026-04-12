@@ -67,7 +67,7 @@
 [data-theme=dark] .prose p,
 [data-theme=dark] .prose li,
 [data-theme=dark] .prose blockquote {
-  color: #e8e8e8;
+  color: #f0f0f0 !important;
 }
     h1, h2, h3, h4 {
       font-family: "Playfair Display", ui-serif, Georgia, serif;
