@@ -105,3 +105,11 @@ html[data-theme="dark"] .prose blockquote {
 html[data-theme="dark"] .container p {
   color: #ffffff !important;
 }
+
+.trakteer-text {
+  color: #292929;
+}
+
+html[data-theme="dark"] .trakteer-text {
+  color: #f0f0f0 !important;
+}
