@@ -39,6 +39,24 @@
   time {
     @apply text-sm;
   }
+  nav a {
+    font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  footer {
+    font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  }
+  footer nav a {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  footer p {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
   .prose {
     font-family: "Lora", ui-serif, Georgia, serif;
     p, li, blockquote {
