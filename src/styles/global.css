@@ -60,16 +60,9 @@
   .prose {
     font-family: "Lora", ui-serif, Georgia, serif;
     p, li, blockquote {
-  font-family: "Lora", ui-serif, Georgia, serif;
-  color: #292929;
-}
-
-[data-theme=dark] .prose p,
-[data-theme=dark] .prose li,
-[data-theme=dark] .prose blockquote {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
+      font-family: "Lora", ui-serif, Georgia, serif;
+      color: #292929;
+    }
     h1, h2, h3, h4 {
       font-family: "Playfair Display", ui-serif, Georgia, serif;
     }
@@ -100,4 +93,11 @@
   .font-ui {
     font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
   }
+}
+
+html[data-theme="dark"] .prose p,
+html[data-theme="dark"] .prose li,
+html[data-theme="dark"] .prose blockquote {
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
