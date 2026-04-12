@@ -101,3 +101,7 @@ html[data-theme="dark"] .prose blockquote {
   color: #ffffff !important;
   opacity: 1 !important;
 }
+
+html[data-theme="dark"] .container p {
+  color: #ffffff !important;
+}
