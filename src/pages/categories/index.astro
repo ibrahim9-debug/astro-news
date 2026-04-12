@@ -1,24 +1,29 @@
 ---
 import ListLayout from "@/layouts/list.astro";
-import { getEntry } from "astro:content";
+import { getEntry, getCollection } from "astro:content";
 const entry = await getEntry("views", "categories");
 if (!entry) {
   return Astro.redirect("/404");
 }
+const articles = await getCollection("articles");
+const ceritaPribadiCount = articles.filter(a => a.data.category.id === "cerita-pribadi").length;
+const mindfulCount = articles.filter(a => a.data.category.id === "mindful").length;
 ---
 <ListLayout header={"Sitemap"} entry={entry}>
   <div class="w-full space-y-8 my-6">
     <div class="flex items-center w-full justify-between gap-2 border-b border-accent/30 pb-2">
-      <h2 class="text-xl">
+      <h2 class="text-xl inline-flex items-center gap-2">
         Cerita Pribadi
+        <span class="text-xs font-sans" style="color: #ff6b35;">({ceritaPribadiCount} Artikel)</span>
       </h2>
       <a href="/categories/cerita-pribadi/1" style="color: #ff6b35; font-size: 0.875rem;">
         Lihat Semua →
       </a>
     </div>
     <div class="flex items-center w-full justify-between gap-2 border-b border-accent/30 pb-2">
-      <h2 class="text-xl">
+      <h2 class="text-xl inline-flex items-center gap-2">
         Mindful
+        <span class="text-xs font-sans" style="color: #ff6b35;">({mindfulCount} Artikel)</span>
       </h2>
       <a href="/categories/mindful/1" style="color: #ff6b35; font-size: 0.875rem;">
         Lihat Semua →
