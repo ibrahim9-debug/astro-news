@@ -183,6 +183,16 @@ html[data-theme="dark"] .trakteer-text {
   color: #f0f0f0 !important;
 }
 
+em {
+  font-family: 'DM Serif Display', serif !important;
+  font-style: italic;
+}
+
+blockquote {
+  font-family: 'DM Serif Display', serif !important;
+  font-style: italic;
+}
+
 .prose em {
   font-family: 'DM Serif Display', serif !important;
   font-style: italic;
