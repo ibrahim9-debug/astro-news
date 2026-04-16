@@ -3,7 +3,6 @@ import "@/styles/global.css";
 import "@fontsource/source-sans-pro/400.css";
 import "@fontsource/source-sans-pro/600.css";
 import "@fontsource/source-sans-pro/700.css";
-import "@fontsource-variable/source-serif-4";
 import { ClientRouter } from "astro:transitions";
 import { SITE } from "@/lib/config";
 import type { ArticleMeta, Meta } from "@/lib/types";
@@ -45,6 +44,8 @@ const OGImage = new URL(meta.ogImage, Astro.url).href;
     href={new URL("rss.xml", Astro.site)}
   />
 
+  <!-- Preload DM Serif Display -->
+  <link rel="preload" href="/fonts/dm-serif-display-italic.woff2" as="font" type="font/woff2" crossorigin />
   <!-- Canonical URL -->
   <link rel="canonical" href={canonicalURL} />
 
