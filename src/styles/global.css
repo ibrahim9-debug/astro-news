@@ -131,16 +131,15 @@
     letter-spacing: 0.04em;
   }
   .prose {
-  font-family: "Lora", ui-serif, Georgia, serif;
-  p, li, blockquote {
     font-family: "Lora", ui-serif, Georgia, serif;
-    color: #292929;
-  }
-  blockquote {
-    font-family: 'DM Serif Display', serif !important;
-    font-style: italic;
-  }
-    
+    p, li {
+      font-family: "Lora", ui-serif, Georgia, serif;
+      color: #292929;
+    }
+    blockquote {
+      font-family: 'DM Serif Display', serif !important;
+      font-style: italic;
+      color: #292929;
     }
     h1, h2, h3, h4 {
       font-family: "Playfair Display", ui-serif, Georgia, serif;
