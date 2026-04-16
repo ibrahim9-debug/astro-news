@@ -203,7 +203,8 @@ blockquote {
   font-style: italic;
 }
 
-.prose blockquote {
+.prose blockquote,
+.prose blockquote p {
   font-family: 'DM Serif Display', serif !important;
   font-style: italic;
 }
