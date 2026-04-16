@@ -71,6 +71,13 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('/fonts/dm-serif-display-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 
 @theme {
   --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif,
@@ -174,4 +181,14 @@ html[data-theme="dark"] .container p {
 }
 html[data-theme="dark"] .trakteer-text {
   color: #f0f0f0 !important;
+}
+
+.prose em {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+}
+
+.prose blockquote {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
 }
