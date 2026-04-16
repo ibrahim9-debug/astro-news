@@ -184,11 +184,11 @@ html[data-theme="dark"] .trakteer-text {
 }
 
 .prose em {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', serif !important;
   font-style: italic;
 }
 
 .prose blockquote {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'DM Serif Display', serif !important;
   font-style: italic;
 }
